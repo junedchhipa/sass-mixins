@@ -1,0 +1,6 @@
+@import '../mixins';
+
+.arrow-box {
+	position: relative;
+	@include css-arrow(15px,2px,red,yellow)
+}

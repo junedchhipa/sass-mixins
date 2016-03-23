@@ -1,0 +1,28 @@
+.arrow-box {
+  position: relative;
+}
+
+.arrow-box::before, .arrow-box::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: solid transparent;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: -12px;
+}
+
+.arrow-box::after {
+  border-bottom-color: red;
+  border-width: 15px;
+  margin-top: -17px;
+}
+
+.arrow-box::before {
+  border-bottom-color: yellow;
+  border-width: 15px;
+  margin-top: -19px;
+}

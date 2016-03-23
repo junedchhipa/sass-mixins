@@ -1,0 +1,25 @@
+
+@mixin css-arrow($arrowSize, $borderSize, $arrowColor, $borderColor) {
+	&::before, &::after {
+		content: "";
+		width: 0;
+		height: 0;
+		border: solid transparent;
+		position: absolute;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+		top: -($arrowSize+(-3px));
+	}
+	&::after {
+		border-bottom-color: $arrowColor;
+		border-width: $arrowSize;
+		margin-top: -($arrowSize+2px);
+	}
+	&::before {
+		border-bottom-color: $borderColor;
+		border-width: $arrowSize;
+		margin-top: -($arrowSize+4px);
+	}
+}
