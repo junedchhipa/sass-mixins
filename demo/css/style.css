@@ -7,7 +7,7 @@
 .arrow-box-top {
   position: relative;
   background-color: #999;
-  border: 1px solid #111;
+  border: 2px solid #111;
 }
 
 .arrow-box-top::before, .arrow-box-top::after {
@@ -23,7 +23,7 @@
 }
 
 .arrow-box-top::before {
-  border-width: 26px;
+  border-width: 27px;
 }
 
 .arrow-box-top::before, .arrow-box-top::after {
@@ -38,13 +38,13 @@
 
 .arrow-box-top::before {
   border-bottom-color: #111;
-  margin-left: -26px;
+  margin-left: -27px;
 }
 
 .arrow-box-right {
   position: relative;
   background-color: #999;
-  border: 1px solid #111;
+  border: 2px solid #111;
 }
 
 .arrow-box-right::before, .arrow-box-right::after {
@@ -60,7 +60,7 @@
 }
 
 .arrow-box-right::before {
-  border-width: 26px;
+  border-width: 27px;
 }
 
 .arrow-box-right::before, .arrow-box-right::after {
@@ -75,13 +75,13 @@
 
 .arrow-box-right::before {
   border-left-color: #111;
-  margin-top: -26px;
+  margin-top: -27px;
 }
 
 .arrow-box-bottom {
   position: relative;
   background-color: #999;
-  border: 1px solid #111;
+  border: 2px solid #111;
 }
 
 .arrow-box-bottom::before, .arrow-box-bottom::after {
@@ -97,7 +97,7 @@
 }
 
 .arrow-box-bottom::before {
-  border-width: 26px;
+  border-width: 27px;
 }
 
 .arrow-box-bottom::before, .arrow-box-bottom::after {
@@ -112,13 +112,13 @@
 
 .arrow-box-bottom::before {
   border-top-color: #111;
-  margin-left: -26px;
+  margin-left: -27px;
 }
 
 .arrow-box-left {
   position: relative;
   background-color: #999;
-  border: 1px solid #111;
+  border: 2px solid #111;
 }
 
 .arrow-box-left::before, .arrow-box-left::after {
@@ -134,7 +134,7 @@
 }
 
 .arrow-box-left::before {
-  border-width: 26px;
+  border-width: 27px;
 }
 
 .arrow-box-left::before, .arrow-box-left::after {
@@ -149,5 +149,5 @@
 
 .arrow-box-left::before {
   border-right-color: #111;
-  margin-top: -26px;
+  margin-top: -27px;
 }

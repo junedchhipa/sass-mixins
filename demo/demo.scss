@@ -8,17 +8,17 @@
 
 .arrow-box-top {
 	// css-arrow(position, arrowSize, BachgroundColor, BorderWidth, BorderColor)
-	@include css-arrow('top',25px,#999,1px,#111)
+	@include css-arrow('top',25px,#999,2px,#111)
 }
 
 .arrow-box-right {
-	@include css-arrow('right',25px,#999,1px,#111)
+	@include css-arrow('right',25px,#999,2px,#111)
 }
 
 .arrow-box-bottom {
-	@include css-arrow('bottom',25px,#999,1px,#111)
+	@include css-arrow('bottom',25px,#999,2px,#111)
 }
 
 .arrow-box-left {
-	@include css-arrow('left',25px,#999,1px,#111)
+	@include css-arrow('left',25px,#999,2px,#111)
 }
