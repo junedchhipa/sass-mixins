@@ -1,25 +1,76 @@
 
-@mixin css-arrow($arrowSize, $borderSize, $arrowColor, $borderColor) {
+@mixin css-arrow($position, $size, $bgColor, $borderWidth, $borderColor) {
+	position: relative;
+	background-color: $bgColor;
+	border: $borderWidth solid $borderColor;
 	&::before, &::after {
 		content: "";
 		width: 0;
 		height: 0;
 		border: solid transparent;
 		position: absolute;
-		margin-left: auto;
-		margin-right: auto;
-		left: 0;
-		right: 0;
-		top: -($arrowSize+(-3px));
 	}
 	&::after {
-		border-bottom-color: $arrowColor;
-		border-width: $arrowSize;
-		margin-top: -($arrowSize+2px);
+		border-width: $size;
 	}
 	&::before {
-		border-bottom-color: $borderColor;
-		border-width: $arrowSize;
-		margin-top: -($arrowSize+4px);
+		border-width: $size + ($borderWidth+($borderWidth/2));
 	}
+	@if ($position=='top') {
+		&::before, &::after {
+			left: 50%;
+			bottom: 100%;
+		}
+		&::after {
+			border-bottom-color: $bgColor;
+			margin-left: -($size);
+		}
+		&::before {
+			border-bottom-color: $borderColor;
+			margin-left: -($size + ($borderWidth+($borderWidth/2)));
+		}
+	}
+	@else if($position=='right') {
+		&::before, &::after {
+			left: 100%;
+			top: 50%;
+		}
+		&::after {
+			border-left-color: $bgColor;
+			margin-top: -($size);
+		}
+		&::before {
+			border-left-color: $borderColor;
+			margin-top: -($size + ($borderWidth+($borderWidth/2)));
+		}
+	}
+	@else if($position=='bottom') {
+		&::before, &::after {
+			top: 100%;
+			left: 50%;
+		}
+		&::after {
+			border-top-color: $bgColor;
+			margin-left: -($size);
+		}
+		&::before {
+			border-top-color: $borderColor;
+			margin-left: -($size + ($borderWidth+($borderWidth/2)));
+		}
+	}
+	@else if($position=='left') {
+		&::before, &::after {
+			right: 100%;
+			top: 50%;
+		}
+		&::after {
+			border-right-color: $bgColor;
+			margin-top: -($size);
+		}
+		&::before {
+			border-right-color: $borderColor;
+			margin-top: -($size + ($borderWidth+($borderWidth/2)));
+		}
+	}
+	
 }

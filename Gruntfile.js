@@ -22,8 +22,8 @@ module.exports = function(grunt) {
       }
     },
     watch: {
-      files: ['resources/assets/sass/**/*.scss'],
-      tasks: ['sass']
+      files: ['mixins.scss', 'demo/demo.scss'],
+      tasks: ['sass',]
     },
   });
 
